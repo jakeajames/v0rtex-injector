@@ -701,6 +701,23 @@ BOOL init_symbols()
              OFFSET_ROP_LDR_X0_X0_0x10              =0xfffffff0063a4a84;
              OFFSET_ROOT_MOUNT_V_NODE               =0xfffffff0075b40b0;
          }
+         //5s 10.2
+         else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Tue Nov 29 21:40:09 PST 2016; root:xnu-3789.32.1~4/RELEASE_ARM64_S5L8960X") == 0) {
+             OFFSET_ZONE_MAP                             = 0xfffffff00755a360;//done
+             OFFSET_KERNEL_MAP                           = 0xfffffff0075b6058;//done
+             OFFSET_KERNEL_TASK                          = 0xfffffff0075b6050;//done
+             OFFSET_REALHOST                             = 0xfffffff00753ca98;//done
+             OFFSET_BZERO                                = 0xfffffff007082140;//done
+             OFFSET_BCOPY                                = 0xfffffff007081f80;//done
+             OFFSET_COPYIN                               = 0xfffffff0071835b8;//done
+             OFFSET_COPYOUT                              = 0xfffffff0071837c0;//done
+             OFFSET_IPC_PORT_ALLOC_SPECIAL               = 0xfffffff00709a060;//done
+             OFFSET_IPC_KOBJECT_SET                      = 0xfffffff0070ad6dc;//done
+             OFFSET_IPC_PORT_MAKE_SEND                   = 0xfffffff007099ba4;//done
+             OFFSET_IOSURFACEROOTUSERCLIENT_VTAB         = 0xfffffff006f2ca20;//done
+             OFFSET_ROP_ADD_X0_X0_0x10                   = 0xfffffff006531fb0;//done
+             OFFSET_ROOT_MOUNT_V_NODE = 0xfffffff0071a5c30;
+         }
      }
     
     else
